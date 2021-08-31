@@ -107,7 +107,7 @@ const CommentsList: FC = () => {
         <div>
             <div className="comments">
                 {values.comments
-                    .filter((comment) => comment.parent !== null)
+                    .filter((comment) => comment.parent === null)
                     .map((comment) => {
                         return (
                             <Comment
